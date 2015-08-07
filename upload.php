@@ -7,7 +7,7 @@
 	//文件大小
 	$file_size = $_FILES["file"]['size'];
 	move_uploaded_file($_FILES["file"]["tmp_name"],$_FILES["file"]["name"]);
-	echo 
+	echo $_FILES["file"]["name"];
 /*
 	$im = new Imagick($_FILES["file"]["name"]);
 	$im->setImageIndex(0);
