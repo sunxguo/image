@@ -22,7 +22,7 @@
 		$im = new Imagick($file_name);
 		$im->setImageIndex(0);
 		$im->setIteratorIndex(0);
-		$im->stripImage(); //去除图片信息
+//		$im->stripImage(); //去除图片信息
 		$im->setImageCompressionQuality(80); //图片质量
 		$im->writeImage('upload.jpg');
 		$im->clear();
