@@ -1,6 +1,9 @@
 <?php
-	header('Cache-Control:no-cache,must-revalidate');  
-	header('Pragma:no-cache'); 
+	header( 'Expires: Mon, 26 Jul 1997 05:00:00 GMT' );
+	header( 'Last-Modified: ' . gmdate( 'D, d M Y H:i:s' ) . ' GMT' );
+	header( 'Cache-Control: no-store, no-cache, must-revalidate' );
+	header( 'Cache-Control: post-check=0, pre-check=0', false );
+	header( 'Pragma: no-cache' );
 //	error_reporting(E_ERROR | E_WARNING);
  	//原文件名
 	echo $file_name = $_FILES["image"]['name'];
