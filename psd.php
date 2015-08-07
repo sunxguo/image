@@ -1,5 +1,5 @@
 <?php
-	error_reporting(E_ERROR | E_WARNING);
+//	error_reporting(E_ERROR | E_WARNING);
  
 	$im = new Imagick('logo.psd');
 	$im->setImageIndex(0);
