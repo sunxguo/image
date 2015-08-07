@@ -1,11 +1,14 @@
 <?php
 //	error_reporting(E_ERROR | E_WARNING);
  	//原文件名
-	echo $file_name = $_FILES["image"]['name'].'<br>';
+	echo $file_name = $_FILES["image"]['name'];
+	echo '<br>';
 	//服务器上临时文件名
-	echo $tmp_name = $_FILES["image"]['tmp_name'].'<br>';
+	echo $tmp_name = $_FILES["image"]['tmp_name'];
+	echo '<br>';
 	//文件大小
-	echo $file_size = $_FILES["image"]['size'].'<br>';
+	echo $file_size = $_FILES["image"]['size'];
+	echo '<br>';
 	if (file_exists($file_name)){
 		echo  $file_name. "已经存在，请更换文件名. ";
     }
