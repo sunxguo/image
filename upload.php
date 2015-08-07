@@ -26,7 +26,7 @@
 		$im->setImageCompressionQuality(80); //图片质量
 		$im->writeImage('upload.jpg');
 		$im->clear();
-		echo "<img src='upload.jpg'/>";
+		echo "<img src='upload.jpg' width='800'/>";
     }
 	
 ?>
