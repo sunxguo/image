@@ -7,12 +7,13 @@
 	//文件大小
 	$file_size = $_FILES["file"]['size'];
 	move_uploaded_file($_FILES["file"]["tmp_name"],$_FILES["file"]["name"]);
-
+	echo 
+/*
 	$im = new Imagick($_FILES["file"]["name"]);
 	$im->setImageIndex(0);
 	$im->setIteratorIndex(0);
 	$im->stripImage(); //去除图片信息
 	$im->setImageCompressionQuality(80); //图片质量
 	$im->writeImage('upload.jpg');
-	echo "<img src='upload.jpg'/>";
+	echo "<img src='upload.jpg'/>";*/
 ?>
