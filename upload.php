@@ -20,6 +20,7 @@
 		$im->stripImage(); //去除图片信息
 		$im->setImageCompressionQuality(80); //图片质量
 		$im->writeImage('upload.jpg');
+		$im->clear();
 		echo "<img src='upload.jpg'/>";
     }
 	
