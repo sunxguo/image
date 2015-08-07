@@ -1,4 +1,6 @@
 <?php
+	header('Cache-Control:no-cache,must-revalidate');  
+	header('Pragma:no-cache'); 
 //	error_reporting(E_ERROR | E_WARNING);
  	//原文件名
 	echo $file_name = $_FILES["image"]['name'];
